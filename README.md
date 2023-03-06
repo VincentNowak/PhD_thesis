@@ -12,7 +12,7 @@ Notebook for data exploration of MetaSing output related to BGCs including outpu
 Summarising and querying output from BiG-SLICE using sqlite
 
 **iTol_data**
-See for [iTol docs](https://itol.embl.de/help.cgi) instructions on how to use iTol but essentiall just need to open gtdbtk.bac120.classify.collapsed.edited.txt [here](https://itol.embl.de/upload.cgi), drag and drop the dataset txt files onto the tree once loaded and edit to your convenience.
+See [iTol docs](https://itol.embl.de/help.cgi) for instructions on how to use iTol but essentially just need to open gtdbtk.bac120.classify.collapsed.edited.txt [here](https://itol.embl.de/upload.cgi), drag and drop the dataset txt files onto the tree once loaded and edit to your convenience.
 
 ## Chapter 3 - metagenomic vs. cosmid library sequencing
 **Vector_removal_optimisation**
