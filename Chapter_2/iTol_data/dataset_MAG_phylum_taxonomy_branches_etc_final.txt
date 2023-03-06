@@ -1,0 +1,86 @@
+TREE_COLORS
+#use this template to define branch colors and styles, colored ranges and label colors/font styles/backgrounds
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#First 3 fields define the node, type and color
+#Possible types are:
+#'range': defines a colored range (colored background for labels/clade)
+#'clade': defines color/style for all branches in a clade
+#'branch': defines color/style for a single branch
+#'label': defines font color/style for the leaf label
+#'label_background': defines the leaf label background color
+
+#The following additional fields are required:
+#for 'range', field 4 defines the colored range label (used in the legend)
+
+#The following additional fields are optional:
+#for 'label', field 4 defines the font style ('normal',''bold', 'italic' or 'bold-italic') and field 5 defines the numeric scale factor for the font size (eg. with value 2, font size for that label will be 2x the standard size)
+#for 'clade' and 'branch', field 4 defines the branch style ('normal' or 'dashed') and field 5 defines the branch width scale factor (eg. with value 0.5, branch width for that clade will be 0.5 the standard width)
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID TYPE COLOR LABEL_OR_STYLE SIZE_FACTOR
+
+#Examples
+#internal node with solid branches colored blue and twice the standard width
+#9031|9606 clade #0000ff normal 2
+#internal node with dashed branches colored red and one half the standard width
+#601|340 clade #ff0000 dashed 0.5
+#a single internal branch colored green, dashed and 5 times the normal width
+#915|777 branch #00ff00 dashed 5
+
+#colored range covering all leaves of an internal node,  colored red and with label 'Eukaryota'
+#184922|9606 range #ff0000 Eukaryota
+#examples of colored ranges from iTOL's Tree of Life
+#2190|2287 range #aaffaa Archaea
+Aplysina.bin.4.fa.maxbin2|Aplysina.bin.30.fa.metabat2,range,#b2df8a,Acidobacteriota
+Aplysina.bin.107.fa.metabat2|Aplysina.cluster.DBSCAN.round4.52,range,#a46502,Bdellovibrionota_B
+0977.cluster.DBSCAN.round6.32|CS783.cluster.DBSCAN.round1.9,range,#006633,Bdellovibrionota
+CS200.cluster.DBSCAN.round3777.7|0977.bin.48.fa.maxbin2,range,#a02c33,Binatota
+Aplysina.bin.124.fa.metabat2|Petrosia.bin.22.fa.maxbin2,range,#9c9c9c,UBA8248
+Petrosia.cluster.DBSCAN.round73.0|CS211.cluster.DBSCAN.round1.8,range,#000000,Tectomicrobia
+MHpat150.cluster.DBSCAN.round4.4|Petrosia.bin.75.fa.metabat2,range,#F47BE7,Nitrospirota
+MHs3.bin.10.fa.maxbin2|Aplysina.bin.8.fa.maxbin2,range,#a561ed,Dadabacteria
+Aplysina.cluster.DBSCAN.round4.18|CS202.cluster.DBSCAN.round5.15,range,#990099,Proteobacteria
+CS202.cluster.DBSCAN.round3553.10|CS200.bin.90.fa.metabat2,range,#e84f51,Poribacteria
+Petrosia.cluster.DBSCAN.round3.13|Sarcotragus.bin.42.fa.metabat2,range,#33a02c,Bacteroidota
+CS783.bin.9.fa.metabat2|CS202.cluster.DBSCAN.round1.1,range,#5d6d3c,Latescibacterota
+Petrosia.cluster.DBSCAN.round12.1|Sarcotragus.cluster.DBSCAN.round2082.37,range,#e3bba6,Gemmatimonadota
+Aplysina.bin.72.fa.metabat2|CS783.bin.5.fa.metabat2,range,#fb9a99,Spirochaetota
+CS200.cluster.DBSCAN.round66.29|MHpat150.bin.10.fa.metabat2,range,#a6cee3,Verrucomicrobiota
+Aplysina.bin.144.fa.metabat2|7375.bin.4.fa.maxbin2,range,#cab2d6,Cyanobacteria
+MHs3.bin.12.fa.maxbin2|Sarcotragus.bin.52.fa.metabat2,range,#ff9e3d,Actinobacteriota
+CS203.bin.46.fa.metabat2|CS211.bin.20.fa.metabat2,range,#1f78b4,Deinococcota
+Aplysina.bin.41.fa.maxbin2|Aplysina.bin.41.fa.maxbin2,range,#dcdc23,Patescibacteria
+CS200.bin.98.fa.metabat2|CS783.bin.29.fa.metabat2,range,#02437f,Chloroflexota_B
+CS203.bin.83.fa.metabat2|CS202.cluster.DBSCAN.round70.10,range,#e3a6c9,Chloroflexota
+
+#LEGEND_COLORS,#1f78b4,#990099,#cab2d6,#F47BE7,#000000,#9c9c9c,#e84f51,#33a02c,#e3bba6,#e3a6c9,#a02c33,#a6cee3,#5d6d3c,#a561ed,#fb9a99,#ff9e3d,#a46502,#02437f,#006633,#dcdc23,#b2df8a
+#LEGEND_LABELS,Deinococcota,Proteobacteria,Cyanobacteria,Nitrospirota,Tectomicrobia,UBA8248,Poribacteria,Bacteroidota,Gemmatimonadota,Chloroflexota,Binatota,Verrucomicrobiota,Latescibacterota,Dadabacteria,Spirochaetota,Actinobacteriota,Bdellovibrionota_B,Chloroflexota_B,Bdellovibrionota,Patescibacteria,Acidobacteriota
+
+
+#leaf label for node 9606 will be displayed in green, bold and twice the regular font size
+#9606 label #00ff00 bold 2
+
+#leaf label for node 9031 will be displayed in yellow, bold italic and half the regular font size
+#9031 label #ffff00 bold-italic 0.5
+
+#leaf label for node 8015 will be displayed in blue
+#8015 label #0000ff
+
+#leaf label for node 9606 will have a semi-transparent red background
+#Aplysina.bin.41.fa.maxbin2,label,#e2b78b
+#Aplysina.bin.41.fa.maxbin2,label_background,#e2b78b
+

@@ -1,0 +1,28 @@
+DATASET_COLORSTRIP
+SEPARATOR COMMA
+DATASET_LABEL,multi ID matching example
+COLOR,#cc0000
+
+#maximum width
+WIDTH,10
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+MARGIN,10
+
+LEGEND_TITLE,Region
+LEGEND_POSITION_X,100
+LEGEND_POSITION_Y,500
+LEGEND_SHAPES,1,1,1
+LEGEND_COLORS,#6fa8dc,#93c47d,#ea9999
+LEGEND_LABELS,Tonga,NZ,Mediterranean
+LEGEND_SHAPE_SCALES,1,1,1
+
+DATA
+CONTAINS==CS,#6fa8dc
+CONTAINS==0977.,#93c47d
+CONTAINS==7375.,#93c47d
+CONTAINS==MH,#93c47d
+CONTAINS==Aplysina,#ea9999
+CONTAINS==Petrosia,#ea9999
+CONTAINS==Sarcotragus,#ea9999
+
