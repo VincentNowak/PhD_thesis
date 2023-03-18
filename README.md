@@ -24,6 +24,9 @@ Notebook for taxonomic comparison of reads and contigs from metagenomic and cosm
 **Metagenome_v_cosmid_final_data_180722**
 Notebook for analysis of functional and biosynthetic potential identified from metagenomic and cosmid library seqeuncing
 
+**BGC_overlap_finder**
+Bash script that takes in a list of query contig(s) to find overlapping contigs within the metagenomic library sequencing data. Based on the subsampling and Illumina sequencing workflow described in the thesis.
+
 ## Chapter 4 - Heterologous expression
 **GNPS_nodes_lassopeptides_SMM_final**
 Note boook used to manipulate the molecular networking data
